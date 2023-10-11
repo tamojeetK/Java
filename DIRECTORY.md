@@ -1,4 +1,20 @@
 
+## My Revision Code Files
+  * [Code0](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code0.java)
+  * [Code1](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code1.java)
+  * [Code10](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code10.java)
+  * [Code11](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code11.java)
+  * [Code2](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code2.java)
+  * [Code3](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code3.java)
+  * [Code4](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code4.java)
+  * [Code5](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code5.java)
+  * [Code6](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code6.java)
+  * [Code7](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code7.java)
+  * [Code8](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code8.java)
+  * [Code9](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Code9.java)
+  * Mini Programs
+    * [GUI1](https://github.com/TheAlgorithms/Java/blob/master/My%20Revision%20Code%20Files/Mini_Programs/GUI1.java)
+
 ## src
   * main
     * java
@@ -225,6 +241,7 @@
             * [GenericRoot](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/GenericRoot.java)
             * [HarshadNumber](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/HarshadNumber.java)
             * [JugglerSequence](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/JugglerSequence.java)
+            * [KaprekarNumbers](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/KaprekarNumbers.java)
             * [KeithNumber](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/KeithNumber.java)
             * [KrishnamurthyNumber](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/KrishnamurthyNumber.java)
             * [LeonardoNumber](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/LeonardoNumber.java)
@@ -241,6 +258,7 @@
             * [NumberOfDigits](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/NumberOfDigits.java)
             * [PalindromeNumber](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/PalindromeNumber.java)
             * [ParseInteger](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/ParseInteger.java)
+            * [PascalTriangle](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/PascalTriangle.java)
             * [PerfectCube](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/PerfectCube.java)
             * [PerfectNumber](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/PerfectNumber.java)
             * [PerfectSquare](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/maths/PerfectSquare.java)
@@ -278,6 +296,7 @@
             * [TwoSumProblem](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/misc/TwoSumProblem.java)
             * [WordBoggle](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/misc/WordBoggle.java)
           * others
+            * [ArrayLeftRotation](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/others/ArrayLeftRotation.java)
             * [BankersAlgorithm](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/others/BankersAlgorithm.java)
             * [BestFit](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/others/BestFit.java)
             * [BFPRT](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/others/BFPRT.java)
@@ -344,6 +363,7 @@
             * [LowerBound](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/LowerBound.java)
             * [MonteCarloTreeSearch](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/MonteCarloTreeSearch.java)
             * [PerfectBinarySearch](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/PerfectBinarySearch.java)
+            * [QuickSelect](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/QuickSelect.java)
             * [SaddlebackSearch](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/SaddlebackSearch.java)
             * [SquareRootBinarySearch](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/SquareRootBinarySearch.java)
             * [TernarySearch](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/TernarySearch.java)
@@ -383,6 +403,7 @@
             * [TreeSort](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/sorts/TreeSort.java)
           * strings
             * [Alphabetical](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/Alphabetical.java)
+            * [Anagrams](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/Anagrams.java)
             * [CharactersSame](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/CharactersSame.java)
             * [CheckAnagrams](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/CheckAnagrams.java)
             * [CheckVowels](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/CheckVowels.java)
@@ -397,3 +418,11 @@
             * [Rotation](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/Rotation.java)
             * [Upper](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/Upper.java)
             * [WordLadder](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/WordLadder.java)
+  * test
+          * maths
+            * [KaprekarNumbersTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/maths/KaprekarNumbersTest.java)
+            * [PascalTriangleTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/maths/PascalTriangleTest.java)
+          * others
+            * [ArrayLeftRotationTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/others/ArrayLeftRotationTest.java)
+          * searches
+            * [QuickSelectTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/searches/QuickSelectTest.java)
