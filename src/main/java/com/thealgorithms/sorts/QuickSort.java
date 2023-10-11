@@ -36,7 +36,7 @@ class QuickSort implements SortAlgorithm {
     }
 
     /**
-     * Ramdomize the array to avoid the basically ordered sequences
+     * Randomize the array to avoid the basically ordered sequences
      *
      * @param array The array to be sorted
      * @param left The first index of an array
@@ -75,24 +75,5 @@ class QuickSort implements SortAlgorithm {
             }
         }
         return left;
-    }
-
-    // Driver Program
-    public static void main(String[] args) {
-
-        // For integer input
-        Integer[] array = {3, 4, 1, 32, 0, 1, 5, 12, 2, 5, 7, 8, 9, 2, 44, 111, 5};
-
-        QuickSort quickSort = new QuickSort();
-        quickSort.sort(array);
-
-        // Output => 0 1 1 2 2 3 4 5 5 5 7 8 9 12 32 44 111
-        print(array);
-
-        String[] stringArray = {"c", "a", "e", "b", "d"};
-        quickSort.sort(stringArray);
-
-        // Output => a	b	c	d	e
-        print(stringArray);
     }
 }

@@ -5,22 +5,23 @@ import static com.thealgorithms.sorts.SortUtils.*;
 public class CircleSort implements SortAlgorithm {
 
     /* This method implements the circle sort
-    * @param array The array to be sorted 
+     * @param array The array to be sorted
      */
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
         int n = array.length;
-        while (doSort(array, 0, n - 1));
+        while (doSort(array, 0, n - 1))
+            ;
         return array;
     }
 
     /* This method implements the cyclic sort recursive version
-    * @param array The array to be sorted
-    * @param the left boundary of the part currently being sorted
-    * @param the right boundary of the part currently being sorted
+     * @param array The array to be sorted
+     * @param the left boundary of the part currently being sorted
+     * @param the right boundary of the part currently being sorted
      */
     private <T extends Comparable<T>> Boolean doSort(T[] array, int left, int right) {
-        Boolean swapped = false;
+        boolean swapped = false;
 
         if (left == right) {
             return false;

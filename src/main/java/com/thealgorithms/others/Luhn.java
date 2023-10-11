@@ -68,7 +68,8 @@ public class Luhn {
     public static void main(String[] args) {
         System.out.println("Luhn algorithm usage examples:");
         int[] validInput = {4, 5, 6, 1, 2, 6, 1, 2, 1, 2, 3, 4, 5, 4, 6, 7};
-        int[] invalidInput = {4, 5, 6, 1, 2, 6, 1, 2, 1, 2, 3, 4, 5, 4, 6, 4}; //typo in last symbol
+        int[] invalidInput = {4, 5, 6, 1, 2, 6, 1, 2, 1, 2, 3, 4, 5, 4, 6, 4}; // typo in last
+                                                                               // symbol
         checkAndPrint(validInput);
         checkAndPrint(invalidInput);
 
@@ -82,12 +83,9 @@ public class Luhn {
     }
 
     private static void checkAndPrint(int[] input) {
-        String validationResult = Luhn.luhnCheck(input)
-                ? "valid"
-                : "not valid";
+        String validationResult = Luhn.luhnCheck(input) ? "valid" : "not valid";
         System.out.println("Input " + Arrays.toString(input) + " is " + validationResult);
     }
-
 
     /*
         ========================
@@ -98,7 +96,6 @@ public class Luhn {
      * Object representation of credit card.
      */
     private record CreditCard(int[] digits) {
-
         private static final int DIGITS_COUNT = 16;
 
         /**
@@ -145,9 +142,7 @@ public class Luhn {
         }
 
         private static int[] toIntArray(String string) {
-            return string.chars()
-                    .map(i -> Character.digit(i, 10))
-                    .toArray();
+            return string.chars().map(i -> Character.digit(i, 10)).toArray();
         }
     }
 

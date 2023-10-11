@@ -15,10 +15,8 @@ class AffineCipher {
             {here x is msg[i] and m is 26} and added 'A' to
             bring it in range of ascii alphabet[ 65-90 | A-Z ] */
             if (msg[i] != ' ') {
-                cipher = cipher
-                        + (char) ((((a * (msg[i] - 'A')) + b) % 26) + 'A');
-            } else // else simply append space character
-            {
+                cipher = cipher + (char) ((((a * (msg[i] - 'A')) + b) % 26) + 'A');
+            } else { // else simply append space character
                 cipher += msg[i];
             }
         }
@@ -30,8 +28,8 @@ class AffineCipher {
         int a_inv = 0;
         int flag = 0;
 
-        //Find a^-1 (the multiplicative inverse of a
-        //in the group of integers modulo m.)
+        // Find a^-1 (the multiplicative inverse of a
+        // in the group of integers modulo m.)
         for (int i = 0; i < 26; i++) {
             flag = (a * i) % 26;
 
@@ -46,10 +44,8 @@ class AffineCipher {
             {here x is cipher[i] and m is 26} and added 'A'
             to bring it in range of ASCII alphabet[ 65-90 | A-Z ] */
             if (cipher.charAt(i) != ' ') {
-                msg = msg + (char) (((a_inv
-                        * ((cipher.charAt(i) + 'A' - b)) % 26)) + 'A');
-            } else //else simply append space character
-            {
+                msg = msg + (char) (((a_inv * ((cipher.charAt(i) + 'A' - b)) % 26)) + 'A');
+            } else { // else simply append space character
                 msg += cipher.charAt(i);
             }
         }
@@ -67,6 +63,5 @@ class AffineCipher {
 
         // Calling Decryption function
         System.out.println("Decrypted Message is: " + decryptCipher(cipherText));
-
     }
 }

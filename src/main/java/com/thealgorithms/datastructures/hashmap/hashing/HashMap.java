@@ -2,14 +2,14 @@ package com.thealgorithms.datastructures.hashmap.hashing;
 
 public class HashMap {
 
-    private int hsize;
-    private LinkedList[] buckets;
+    private final int hsize;
+    private final LinkedList[] buckets;
 
     public HashMap(int hsize) {
         buckets = new LinkedList[hsize];
         for (int i = 0; i < hsize; i++) {
             buckets[i] = new LinkedList();
-            // Java requires explicit initialisaton of each object
+            // Java requires explicit initialization of each object
         }
         this.hsize = hsize;
     }
@@ -59,42 +59,33 @@ public class HashMap {
         }
 
         private Node findEnd(Node n) {
-            if (n.getNext() == null) {
-                return n;
-            } else {
-                return findEnd(n.getNext());
+            while (n.getNext() != null) {
+                n = n.getNext();
             }
+            return n;
         }
 
         public Node findKey(int key) {
             if (!isEmpty()) {
-                return findKey(first, key);
-            } else {
-                System.out.println("List is empty");
-                return null;
-            }
-        }
+                Node temp = first;
+                if (temp.getKey() == key) return temp;
 
-        private Node findKey(Node n, int key) {
-            if (n.getKey() == key) {
-                return n;
-            } else if (n.getNext() == null) {
-                System.out.println("Key not found");
-                return null;
-            } else {
-                return findKey(n.getNext(), key);
+                while ((temp = temp.getNext()) != null) {
+                    if (temp.getKey() == key) return temp;
+                }
             }
+            return null;
         }
 
         public void delete(int key) {
             if (!isEmpty()) {
                 if (first.getKey() == key) {
-                    first = null;
+                    Node next = first.next;
+                    first.next = null; // help GC
+                    first = next;
                 } else {
                     delete(first, key);
                 }
-            } else {
-                System.out.println("List is empty");
             }
         }
 
@@ -105,6 +96,8 @@ public class HashMap {
                 } else {
                     n.setNext(n.getNext().getNext());
                 }
+            } else {
+                delete(n.getNext(), key);
             }
         }
 
@@ -128,7 +121,7 @@ public class HashMap {
     public static class Node {
 
         private Node next;
-        private int key;
+        private final int key;
 
         public Node(int key) {
             next = null;

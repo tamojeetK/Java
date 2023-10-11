@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Java program for printing juggler sequence 
+ * Java program for printing juggler sequence
  * Wikipedia: https://en.wikipedia.org/wiki/Juggler_sequence
- * 
+ *
  * Author: Akshay Dubey (https://github.com/itsAkshayDubey)
- * 
+ *
  * */
 
 public class JugglerSequence {
+
     /**
      * This method prints juggler sequence starting with the number in the parameter
      *

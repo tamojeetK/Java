@@ -33,7 +33,7 @@ public class Damm {
         {5, 8, 6, 9, 7, 2, 0, 1, 3, 4},
         {8, 9, 4, 5, 3, 6, 2, 0, 1, 7},
         {9, 4, 3, 8, 6, 1, 7, 2, 0, 5},
-        {2, 5, 8, 1, 4, 3, 6, 7, 9, 0}
+        {2, 5, 8, 1, 4, 3, 6, 7, 9, 0},
     };
 
     /**
@@ -92,9 +92,7 @@ public class Damm {
     }
 
     private static void checkAndPrint(String input) {
-        String validationResult = Damm.dammCheck(input)
-                ? "valid"
-                : "not valid";
+        String validationResult = Damm.dammCheck(input) ? "valid" : "not valid";
         System.out.println("Input '" + input + "' is " + validationResult);
     }
 
@@ -111,8 +109,6 @@ public class Damm {
     }
 
     private static int[] toIntArray(String string) {
-        return string.chars()
-                .map(i -> Character.digit(i, 10))
-                .toArray();
+        return string.chars().map(i -> Character.digit(i, 10)).toArray();
     }
 }

@@ -13,7 +13,6 @@ class CocktailShakerSort implements SortAlgorithm {
      */
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
-
         int length = array.length;
         int left = 0;
         int right = length - 1;

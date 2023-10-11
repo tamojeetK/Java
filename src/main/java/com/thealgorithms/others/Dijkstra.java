@@ -31,7 +31,8 @@ public class Dijkstra {
         new Graph.Edge("c", "d", 11),
         new Graph.Edge("c", "f", 2),
         new Graph.Edge("d", "e", 6),
-        new Graph.Edge("e", "f", 9),};
+        new Graph.Edge("e", "f", 9),
+    };
     private static final String START = "a";
     private static final String END = "e";
 
@@ -47,6 +48,7 @@ public class Dijkstra {
 }
 
 class Graph {
+
     // mapping of vertex names to Vertex objects, built from a set of Edges
 
     private final Map<String, Vertex> graph;
@@ -123,11 +125,7 @@ class Graph {
             if (previous != null ? !previous.equals(vertex.previous) : vertex.previous != null) {
                 return false;
             }
-            if (neighbours != null ? !neighbours.equals(vertex.neighbours) : vertex.neighbours != null) {
-                return false;
-            }
-
-            return true;
+            return neighbours != null ? neighbours.equals(vertex.neighbours) : vertex.neighbours == null;
         }
 
         @Override
@@ -165,8 +163,8 @@ class Graph {
         // another pass to set neighbouring vertices
         for (Edge e : edges) {
             graph.get(e.v1).neighbours.put(graph.get(e.v2), e.dist);
-            // graph.get(e.v2).neighbours.put(graph.get(e.v1), e.dist); // also do this for an undirected
-            // graph
+            // graph.get(e.v2).neighbours.put(graph.get(e.v1), e.dist); // also do this for an
+            // undirected graph
         }
     }
 
@@ -200,7 +198,8 @@ class Graph {
             // vertex with shortest distance (first iteration will return source)
             u = q.pollFirst();
             if (u.dist == Integer.MAX_VALUE) {
-                break; // we can ignore u (and any other remaining vertices) since they are unreachable
+                break; // we can ignore u (and any other remaining vertices) since they are
+                       // unreachable
             }
             // look at distances to each neighbour
             for (Map.Entry<Vertex, Integer> a : u.neighbours.entrySet()) {

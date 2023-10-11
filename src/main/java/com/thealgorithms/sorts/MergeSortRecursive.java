@@ -1,7 +1,7 @@
 package com.thealgorithms.sorts;
 
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MergeSortRecursive {
@@ -12,13 +12,11 @@ public class MergeSortRecursive {
         this.arr = arr;
     }
 
-    public void mergeSort() {
-        List<Integer> arrSorted = merge(arr);
-        System.out.println(arrSorted);
+    public List<Integer> mergeSort() {
+        return merge(arr);
     }
 
     private static List<Integer> merge(List<Integer> arr) {
-
         // base condition
         if (arr.size() <= 1) {
             return arr;
@@ -48,23 +46,18 @@ public class MergeSortRecursive {
         }
         if (unsortedA.get(0) <= unsortedB.get(0)) {
             List<Integer> newAl = new ArrayList<Integer>() {
-                {
-                    add(unsortedA.get(0));
-                }
+                { add(unsortedA.get(0)); }
             };
             newAl.addAll(sort(unsortedA.subList(1, unsortedA.size()), unsortedB));
             return newAl;
         } else {
             List<Integer> newAl = new ArrayList<Integer>() {
-                {
-                    add(unsortedB.get(0));
-                }
+                { add(unsortedB.get(0)); }
             };
             newAl.addAll(sort(unsortedA, unsortedB.subList(1, unsortedB.size())));
             return newAl;
         }
     }
-
 }
 
 class App {

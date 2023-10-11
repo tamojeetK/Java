@@ -1,7 +1,7 @@
 package com.thealgorithms.searches;
 
-import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
 
@@ -118,8 +118,7 @@ public class MonteCarloTreeSearch {
                     break;
                 }
 
-                uctTemp = ((double) childNode.score / childNode.visitCount)
-                        + 1.41 * Math.sqrt(Math.log(promisingNode.visitCount) / (double) childNode.visitCount);
+                uctTemp = ((double) childNode.score / childNode.visitCount) + 1.41 * Math.sqrt(Math.log(promisingNode.visitCount) / (double) childNode.visitCount);
 
                 if (uctTemp > uctIndex) {
                     uctIndex = uctTemp;
@@ -148,7 +147,7 @@ public class MonteCarloTreeSearch {
         // To use the MCTS algorithm correctly this should be a simulation of the nodes' current
         // state of the game until it finishes (if possible) and use an evaluation function to
         // determine how good or bad the play was.
-        // e.g. Play tic tac toe choosing random squares until the game ends. 
+        // e.g. Play tic tac toe choosing random squares until the game ends.
         promisingNode.playerWon = (rand.nextInt(6) == 0);
 
         isPlayerWinner = promisingNode.playerWon;
@@ -158,8 +157,7 @@ public class MonteCarloTreeSearch {
             tempNode.visitCount++;
 
             // Add wining scores to bouth player and opponent depending on the turn.
-            if ((tempNode.isPlayersTurn && isPlayerWinner)
-                    || (!tempNode.isPlayersTurn && !isPlayerWinner)) {
+            if ((tempNode.isPlayersTurn && isPlayerWinner) || (!tempNode.isPlayersTurn && !isPlayerWinner)) {
                 tempNode.score += WIN_SCORE;
             }
 
@@ -175,8 +173,7 @@ public class MonteCarloTreeSearch {
         System.out.println("N.\tScore\t\tVisits");
 
         for (int i = 0; i < rootNode.childNodes.size(); i++) {
-            System.out.println(String.format("%02d\t%d\t\t%d", i + 1,
-                    rootNode.childNodes.get(i).score, rootNode.childNodes.get(i).visitCount));
+            System.out.printf("%02d\t%d\t\t%d%n", i + 1, rootNode.childNodes.get(i).score, rootNode.childNodes.get(i).visitCount);
         }
     }
 }

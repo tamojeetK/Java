@@ -77,8 +77,7 @@ public final class LinearDiophantineEquationsSolver {
                 return false;
             }
             var that = (Solution) obj;
-            return this.x == that.x
-                    && this.y == that.y;
+            return this.x == that.x && this.y == that.y;
         }
 
         @Override
@@ -89,14 +88,12 @@ public final class LinearDiophantineEquationsSolver {
         @Override
         public String toString() {
             return "Solution["
-                    + "x=" + x + ", "
-                    + "y=" + y + ']';
+                + "x=" + x + ", "
+                + "y=" + y + ']';
         }
-
     }
 
     public record Equation(int a, int b, int c) {
-
     }
 
     public static final class GcdSolutionWrapper {
@@ -118,8 +115,7 @@ public final class LinearDiophantineEquationsSolver {
                 return false;
             }
             var that = (GcdSolutionWrapper) obj;
-            return this.gcd == that.gcd
-                    && Objects.equals(this.solution, that.solution);
+            return (this.gcd == that.gcd && Objects.equals(this.solution, that.solution));
         }
 
         public int getGcd() {
@@ -145,10 +141,9 @@ public final class LinearDiophantineEquationsSolver {
 
         @Override
         public String toString() {
-            return "GcdSolutionWrapper["
-                    + "gcd=" + gcd + ", "
-                    + "solution=" + solution + ']';
+            return ("GcdSolutionWrapper["
+                + "gcd=" + gcd + ", "
+                + "solution=" + solution + ']');
         }
-
     }
 }

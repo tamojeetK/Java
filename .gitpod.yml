@@ -1,6 +1,12 @@
+---
 image:
-  file: .gitpod.Dockerfile
+  file: .gitpod.dockerfile
 
 tasks:
-  - init: 'echo "TODO: Replace with init/build command"'
-    command: (e.g. 'npm start', 'yarn watch'...)
+  - init: |
+      mvn dependency:resolve
+      mvn compile
+
+vscode:
+  extensions:
+    - xaver.clang-format

@@ -7,17 +7,11 @@ public class CoinChange {
 
     // Driver Program
     public static void main(String[] args) {
-
         int amount = 12;
         int[] coins = {2, 4, 5};
 
-        System.out.println(
-                "Number of combinations of getting change for " + amount + " is: " + change(coins, amount));
-        System.out.println(
-                "Minimum number of coins required for amount :"
-                + amount
-                + " is: "
-                + minimumCoins(coins, amount));
+        System.out.println("Number of combinations of getting change for " + amount + " is: " + change(coins, amount));
+        System.out.println("Minimum number of coins required for amount :" + amount + " is: " + minimumCoins(coins, amount));
     }
 
     /**
@@ -29,7 +23,6 @@ public class CoinChange {
      * number of combinations of change
      */
     public static int change(int[] coins, int amount) {
-
         int[] combinations = new int[amount + 1];
         combinations[0] = 1;
 
@@ -49,7 +42,7 @@ public class CoinChange {
      *
      * @param coins The list of coins
      * @param amount The amount for which we need to find the minimum number of
-     * coins. Finds the the minimum number of coins that make a given value.
+     * coins. Finds the minimum number of coins that make a given value.
      */
     public static int minimumCoins(int[] coins, int amount) {
         // minimumCoins[i] will store the minimum coins needed for amount i

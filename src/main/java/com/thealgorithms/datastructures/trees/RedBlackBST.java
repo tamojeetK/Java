@@ -28,8 +28,7 @@ public class RedBlackBST {
             return;
         }
         printTree(node.left);
-        System.out.print(
-                ((node.color == R) ? " R " : " B ") + "Key: " + node.key + " Parent: " + node.p.key + "\n");
+        System.out.print(((node.color == R) ? " R " : " B ") + "Key: " + node.key + " Parent: " + node.p.key + "\n");
         printTree(node.right);
     }
 
@@ -37,10 +36,9 @@ public class RedBlackBST {
         if (node == nil) {
             return;
         }
-        System.out.print(
-                ((node.color == R) ? " R " : " B ") + "Key: " + node.key + " Parent: " + node.p.key + "\n");
-        printTree(node.left);
-        printTree(node.right);
+        System.out.print(((node.color == R) ? " R " : " B ") + "Key: " + node.key + " Parent: " + node.p.key + "\n");
+        printTreepre(node.left);
+        printTreepre(node.right);
     }
 
     private Node findNode(Node findNode, Node node) {
@@ -297,23 +295,20 @@ public class RedBlackBST {
 
     public void insertDemo() {
         Scanner scan = new Scanner(System.in);
-        while (true) {
-            System.out.println("Add items");
+        System.out.println("Add items");
 
-            int item;
-            Node node;
+        int item;
+        Node node;
 
+        item = scan.nextInt();
+        while (item != -999) {
+            node = new Node(item);
+            insert(node);
             item = scan.nextInt();
-            while (item != -999) {
-                node = new Node(item);
-                insert(node);
-                item = scan.nextInt();
-            }
-            printTree(root);
-            System.out.println("Pre order");
-            printTreepre(root);
-            break;
         }
+        printTree(root);
+        System.out.println("Pre order");
+        printTreepre(root);
         scan.close();
     }
 

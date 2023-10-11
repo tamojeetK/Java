@@ -32,7 +32,6 @@ public class SelectionSort implements SortAlgorithm {
      * Driver Code
      */
     public static void main(String[] args) {
-
         Integer[] arr = {4, 23, 6, 78, 1, 54, 231, 9, 12};
         SelectionSort selectionSort = new SelectionSort();
         Integer[] sorted = selectionSort.sort(arr);

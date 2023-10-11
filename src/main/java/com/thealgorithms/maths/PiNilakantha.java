@@ -29,7 +29,6 @@ public class PiNilakantha {
         int divCounter = 2;
 
         for (int i = 0; i < iterations; i++) {
-
             if (i % 2 == 0) {
                 pi = pi + 4.0 / (divCounter * (divCounter + 1) * (divCounter + 2));
             } else {

@@ -119,7 +119,27 @@ public class BFPRT {
     }
 
     public static void main(String[] args) {
-        int[] arr = {11, 9, 1, 3, 9, 2, 2, 5, 6, 5, 3, 5, 9, 7, 2, 5, 5, 1, 9};
+        int[] arr = {
+            11,
+            9,
+            1,
+            3,
+            9,
+            2,
+            2,
+            5,
+            6,
+            5,
+            3,
+            5,
+            9,
+            7,
+            2,
+            5,
+            5,
+            1,
+            9,
+        };
         int[] minK = getMinKNumsByBFPRT(arr, 5);
         System.out.println(Arrays.toString(minK));
     }

@@ -20,9 +20,9 @@ public class DecimalToAnyBase {
         int base = Integer.parseInt(br.readLine());
         System.out.println();
 
-        System.out.println("Decimal Input" + " is: " + decInput);
-        System.out.println(
-                "Value of " + decInput + " in base " + base + " is: " + convertToAnyBase(decInput, base));
+        System.out.println("Decimal Input"
+            + " is: " + decInput);
+        System.out.println("Value of " + decInput + " in base " + base + " is: " + convertToAnyBase(decInput, base));
 
         br.close();
     }

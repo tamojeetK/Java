@@ -3,7 +3,6 @@ package com.thealgorithms.dynamicprogramming;
 public class Sum_Of_Subset {
 
     public static void main(String[] args) {
-
         int[] arr = {7, 3, 2, 5, 8};
         int Key = 14;
 

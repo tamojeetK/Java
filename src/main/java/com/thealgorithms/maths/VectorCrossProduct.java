@@ -28,7 +28,7 @@ package com.thealgorithms.maths;
  * following Java Program calculates the direction ratios of the cross products
  * of two vector. The program uses a function, cross() for doing so. The
  * direction ratios for the first and the second vector has to be passed one by
- * one seperated by a space character.
+ * one separated by a space character.
  *
  * Magnitude of a vector is the square root of the sum of the squares of the
  * direction ratios.
@@ -45,7 +45,7 @@ public class VectorCrossProduct {
     int y;
     int z;
 
-    //Default constructor, initialises all three Direction Ratios to 0
+    // Default constructor, initialises all three Direction Ratios to 0
     VectorCrossProduct() {
         x = 0;
         y = 0;
@@ -110,18 +110,16 @@ public class VectorCrossProduct {
     }
 
     static void test() {
-        //Create two vectors
+        // Create two vectors
         VectorCrossProduct A = new VectorCrossProduct(1, -2, 3);
         VectorCrossProduct B = new VectorCrossProduct(2, 0, 3);
 
-        //Determine cross product
+        // Determine cross product
         VectorCrossProduct crossProd = A.crossProduct(B);
         crossProd.displayVector();
 
-        //Determine dot product
+        // Determine dot product
         int dotProd = A.dotProduct(B);
         System.out.println("Dot Product of A and B: " + dotProd);
-
     }
-
 }

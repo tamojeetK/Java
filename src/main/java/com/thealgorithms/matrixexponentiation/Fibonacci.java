@@ -12,7 +12,7 @@ public class Fibonacci {
     // Exponentiation matrix for Fibonacci sequence
     private static final int[][] fibMatrix = {{1, 1}, {1, 0}};
     private static final int[][] identityMatrix = {{1, 0}, {0, 1}};
-    //First 2 fibonacci numbers
+    // First 2 fibonacci numbers
     private static final int[][] baseFibNumbers = {{1}, {0}};
 
     /**
@@ -23,7 +23,7 @@ public class Fibonacci {
      * @return The product of matrix1 and matrix2
      */
     private static int[][] matrixMultiplication(int[][] matrix1, int[][] matrix2) {
-        //Check if matrices passed can be multiplied
+        // Check if matrices passed can be multiplied
         int rowsInMatrix1 = matrix1.length;
         int columnsInMatrix1 = matrix1[0].length;
 

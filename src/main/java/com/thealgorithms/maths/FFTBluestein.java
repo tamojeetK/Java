@@ -30,7 +30,8 @@ public class FFTBluestein {
         ArrayList<FFT.Complex> an = new ArrayList<>();
         ArrayList<FFT.Complex> bn = new ArrayList<>();
 
-        /* Initialization of the b(n) sequence (see Wikipedia's article above for the symbols used)*/
+        /* Initialization of the b(n) sequence (see Wikipedia's article above for the symbols
+         * used)*/
         for (int i = 0; i < bnSize; i++) {
             bn.add(new FFT.Complex());
         }

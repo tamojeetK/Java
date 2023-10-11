@@ -34,7 +34,16 @@ public class SimpleSort implements SortAlgorithm {
         System.out.println();
 
         // ==== String =======
-        String[] b = {"banana", "berry", "orange", "grape", "peach", "cherry", "apple", "pineapple"};
+        String[] b = {
+            "banana",
+            "berry",
+            "orange",
+            "grape",
+            "peach",
+            "cherry",
+            "apple",
+            "pineapple",
+        };
         System.out.print("unsorted: ");
         print(b);
         System.out.println();

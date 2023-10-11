@@ -34,8 +34,7 @@ class ShortestSuperSequence {
                 } else if (X.charAt(i - 1) == Y.charAt(j - 1)) {
                     L[i][j] = L[i - 1][j - 1] + 1;
                 } else {
-                    L[i][j] = Math.max(L[i - 1][j],
-                            L[i][j - 1]);
+                    L[i][j] = Math.max(L[i - 1][j], L[i][j - 1]);
                 }
             }
         }
@@ -46,12 +45,11 @@ class ShortestSuperSequence {
     }
 
     // Driver code
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String X = "AGGTAB";
         String Y = "GXTXAYB";
 
         System.out.println("Length of the shortest "
-                + "supersequence is "
-                + shortestSuperSequence(X, Y));
+            + "supersequence is " + shortestSuperSequence(X, Y));
     }
 }

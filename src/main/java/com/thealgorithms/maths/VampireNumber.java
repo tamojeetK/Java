@@ -19,7 +19,6 @@ import java.util.Collections;
 public class VampireNumber {
 
     public static void main(String[] args) {
-
         test(10, 1000);
     }
 
@@ -32,7 +31,8 @@ public class VampireNumber {
                 // System.out.println(i+ " "+ j);
                 if (isVampireNumber(i, j, true)) {
                     countofRes++;
-                    res.append("" + countofRes + ": = ( " + i + "," + j + " = " + i * j + ")" + "\n");
+                    res.append("" + countofRes + ": = ( " + i + "," + j + " = " + i * j + ")"
+                        + "\n");
                 }
             }
         }
@@ -40,10 +40,8 @@ public class VampireNumber {
     }
 
     static boolean isVampireNumber(int a, int b, boolean noPseudoVamireNumbers) {
-
-        // this is for pseudoVampireNumbers  pseudovampire number need not be of length n/2 digits for
-        // example
-        // 126 = 6 x 21
+        // this is for pseudoVampireNumbers  pseudovampire number need not be of length n/2 digits
+        // for example 126 = 6 x 21
         if (noPseudoVamireNumbers) {
             if (a * 10 <= b || b * 10 <= a) {
                 return false;
@@ -58,7 +56,6 @@ public class VampireNumber {
 
     // methode to Split the numbers to Digits
     static String splitIntoDigits(int num, int num2) {
-
         StringBuilder res = new StringBuilder();
 
         ArrayList<Integer> digits = new ArrayList<>();
